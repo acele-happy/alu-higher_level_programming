@@ -1,12 +1,7 @@
 #!/usr/bin/python3
 """"Function documentation"""
-
-
 import unittest
-
 max_integer = __import__('6-max_integer').max_integer
-
-
 class TestMaxInteger(unittest.TestCase):
     """"Function documentation"""
 

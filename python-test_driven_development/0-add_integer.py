@@ -12,8 +12,6 @@
     Raises:
         TypeError: If a or b are not integers or floats.
 """
-
-
 def add_integer(a, b=98):
     """This function adds two integers"""
     if type(a) not in [int, float]:
