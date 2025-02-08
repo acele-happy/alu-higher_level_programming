@@ -1,2 +1,8 @@
 #!/usr/bin/python3
-print(", ".join("{:d}{:d}".format(i, j) for i in range(10) for j in range(i + 1, 10)))
+for i in range(10):
+    for j in range(10):
+        if i < j:
+            if str(i) + str(j) == str(89):
+                print("{}".format(str(i) + str(j)))
+            else:
+                print("{}".format(str(i) + str(j)), end=", ")
