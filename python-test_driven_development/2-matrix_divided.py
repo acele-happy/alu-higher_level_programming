@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """Document"""
 def matrix_divided(matrix, div):
+
+    
     """"Document"""
     if not isinstance(matrix, (list,)):
         raise TypeError("matrix must be a matrix "
