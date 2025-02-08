@@ -1,20 +1,29 @@
 #!/usr/bin/python3
-"""Defines an integer addition function."""
+"""
+    Adds two integers.
+
+    Args:
+        a (int or float): The first number to add.
+        b (int or float): The second number to add. Defaults to 98.
+
+    Returns:
+        int: The sum of a and b.
+
+    Raises:
+        TypeError: If a or b are not integers or floats.
+"""
 
 
 def add_integer(a, b=98):
-    """This function adds two integers
+    """This function adds two integers"""
+    if type(a) not in [int, float]:
+        raise TypeError('a must be an integer')
+    if type(b) not in [int, float]:
+        raise TypeError('b must be an integer')
 
-    :param a:The first integer
-    :type a: int
-    :param b: The second integer whose default value is 98
-    :type b: int
-    :returns: The addition of a and b
-    :rtype: int
-    :Raises: TypeError if either a or b is not an integer and not a float
-    """
-    if ((not isinstance(a, int) and not isinstance(a, float))):
-        raise TypeError("a must be an integer")
-    if ((not isinstance(b, int) and not isinstance(b, float))):
-        raise TypeError("b must be an integer")
-    return (int(a) + int(b))
+    if type(a) is float:
+        a = int(a)
+    if type(b) is float:
+        b = int(b)
+
+    return a + b
