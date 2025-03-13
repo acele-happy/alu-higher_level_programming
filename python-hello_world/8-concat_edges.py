@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-import sys
-sys.stdout.write("object-oriented programming with Python")
-sys.stdout.write("\n")
-
+str1 = "object-oriented"
+str2 = "programming"
+str3 = "with"
+str4 = "Python"
+print(f"{str1} {str2} {str3} {str4}")
