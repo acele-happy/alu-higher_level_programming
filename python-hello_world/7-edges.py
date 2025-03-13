@@ -6,4 +6,3 @@ middle_word = word[1:-1]
 print(word_first_3)
 print(word_last_2)
 print(middle_word)
-
