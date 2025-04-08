@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 """" Print square """
-
-
 def print_square(size):
     """" Print square """
     if not isinstance(size, (int,)):
